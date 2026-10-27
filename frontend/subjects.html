@@ -1,0 +1,148 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Subjects</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="skills.html">
+                    🛠️ Skills & Resume
+                </a>
+
+                <a href="subjects.html" class="active">
+                    📚 Subjects
+                </a>
+
+                <a href="attendance.html">
+                        📊 Attendance
+                    </a>
+
+                <a href="marks.html">
+    📝 Marks
+</a>
+                <a href="jobs.html">
+    💼 Jobs
+</a>
+
+                <a href="applications.html">
+    📄 Applications
+</a>
+
+                <a href="notifications.html">
+    🔔 Notifications
+</a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Subjects
+                    </h1>
+
+                    <p>
+                        Manage your subjects and enrollment
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Message -->
+
+            <p id="message" class="message"></p>
+
+
+            <!-- Available Subjects -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📚 Available Subjects
+                </h2>
+
+                <div id="subjectsContainer" class="subjects-grid">
+                    <p>
+                        Loading subjects...
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- Enrolled Subjects -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    ✅ My Enrolled Subjects
+                </h2>
+
+                <div id="enrolledContainer" class="subjects-grid">
+                    <p>
+                        Loading enrollments...
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/subjects.js"></script>
+
+</body>
+
+</html>
+```

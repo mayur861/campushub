@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Applications</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="skills.html">
+                    🛠️ Skills & Resume
+                </a>
+
+                <a href="subjects.html">
+                    📚 Subjects
+                </a>
+
+                <a href="attendance.html">
+                    📊 Attendance
+                </a>
+
+                <a href="marks.html">
+                    📝 Marks
+                </a>
+
+                <a href="jobs.html">
+                    💼 Jobs
+                </a>
+
+                <a href="applications.html" class="active">
+                    📄 Applications
+                </a>
+                <a href="notifications.html">
+    🔔 Notifications
+</a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        My Applications
+                    </h1>
+
+                    <p>
+                        Track your job applications
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Statistics -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>
+                        Total Applications
+                    </h3>
+
+                    <p id="totalApplications">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Shortlisted
+                    </h3>
+
+                    <p id="shortlisted">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Selected
+                    </h3>
+
+                    <p id="selected">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Rejected
+                    </h3>
+
+                    <p id="rejected">
+                        0
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Applications -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📄 Application History
+                </h2>
+
+                <div id="applicationsContainer" class="applications-container">
+                    Loading applications...
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/applications.js"></script>
+
+</body>
+
+</html>

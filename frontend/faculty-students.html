@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Faculty Students</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="faculty-dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="faculty-students.html" class="active">
+                    👨‍🎓 Students
+                </a>
+
+                <a href="faculty-attendance.html">
+                    📊 Attendance
+                </a>
+
+                <a href="faculty-marks.html">
+                    📝 Marks
+                </a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Students
+                    </h1>
+
+                    <p>
+                        View students from your department
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    👨‍🏫 Faculty
+                </div>
+
+            </header>
+
+
+            <!-- TOTAL STUDENTS -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>
+                        👨‍🎓 Total Students
+                    </h3>
+
+                    <p id="totalStudents">
+                        0
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- STUDENTS -->
+
+            <section class="dashboard-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        👨‍🎓 Department Students
+                    </h2>
+
+                </div>
+
+
+                <div id="studentsContainer" class="faculty-students-container">
+
+                    Loading students...
+
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/faculty-students.js"></script>
+
+</body>
+
+</html>

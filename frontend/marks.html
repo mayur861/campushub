@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Marks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="skills.html">
+                    🛠️ Skills & Resume
+                </a>
+
+                <a href="subjects.html">
+                    📚 Subjects
+                </a>
+
+                <a href="attendance.html">
+                    📊 Attendance
+                </a>
+
+                <a href="marks.html" class="active">
+                    📝 Marks
+                </a>
+
+                <a href="jobs.html">
+    💼 Jobs
+</a>
+
+                <a href="applications.html">
+    📄 Applications
+</a>
+                <a href="notifications.html">
+    🔔 Notifications
+</a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Marks
+                    </h1>
+
+                    <p>
+                        View your academic performance
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Statistics -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>
+                        Average Marks
+                    </h3>
+
+                    <p id="averageMarks">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Highest Marks
+                    </h3>
+
+                    <p id="highestMarks">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Marks Records
+                    </h3>
+
+                    <p id="totalRecords">
+                        0
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Subject Summary -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📚 Subject-wise Performance
+                </h2>
+
+                <div id="summaryContainer" class="marks-table-container">
+                    Loading marks...
+                </div>
+
+            </section>
+
+
+            <!-- Marks History -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📝 Marks History
+                </h2>
+
+                <div id="historyContainer" class="marks-table-container">
+                    Loading history...
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/marks.js"></script>
+
+</body>
+
+</html>

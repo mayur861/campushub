@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Faculty Marks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>CampusHub</h2>
+                <p>Faculty Panel</p>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="faculty-dashboard.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="faculty-students.html">
+                    👨‍🎓 Students
+                </a>
+
+                <a href="faculty-attendance.html">
+                    📅 Attendance
+                </a>
+
+                <a href="faculty-marks.html" class="active">
+                    📝 Marks
+                </a>
+
+                <a href="#" id="logoutBtn">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <div class="faculty-marks-page">
+
+                <div class="page-header">
+
+                    <h1>
+                        Marks Management
+                    </h1>
+
+                    <p>
+                        Enter and manage student examination marks
+                    </p>
+
+                </div>
+
+
+                <!-- Controls -->
+                <div class="marks-controls">
+
+                    <div class="marks-controls-grid">
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Select Subject
+                            </label>
+
+                            <select id="subject">
+
+                                <option value="">
+                                    Select Subject
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="examType">
+                                Exam Type
+                            </label>
+
+                            <select id="examType">
+
+                                <option value="">
+                                    Select Exam Type
+                                </option>
+
+                                <option value="midterm">
+                                    Midterm
+                                </option>
+
+                                <option value="internal">
+                                    Internal
+                                </option>
+
+                                <option value="final">
+                                    Final
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button type="button" id="loadStudentsBtn" class="btn btn-primary">
+
+                            Load Students
+
+                        </button>
+
+                    </div>
+
+
+                    <p id="message" class="message">
+                    </p>
+
+                </div>
+
+
+                <!-- Marks Section -->
+                <div id="marksSection" class="marks-section" style="display: none;">
+
+                    <div class="marks-section-header">
+
+                        <div>
+
+                            <h2>
+                                Student Marks
+                            </h2>
+
+                            <p id="studentCount">
+                                0 students
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table class="student-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>#</th>
+
+                                    <th>
+                                        Student
+                                    </th>
+
+                                    <th>
+                                        Enrollment
+                                    </th>
+
+                                    <th>
+                                        Semester
+                                    </th>
+
+                                    <th>
+                                        CGPA
+                                    </th>
+
+                                    <th>
+                                        Marks / 100
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="studentTableBody">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <div class="save-marks">
+
+                        <button type="button" id="saveMarksBtn" class="btn btn-primary">
+
+                            💾 Save Marks
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Empty State -->
+                <div id="emptyState" class="marks-section">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            📝
+                        </div>
+
+                        <h3>
+                            Select Subject & Exam Type
+                        </h3>
+
+                        <p>
+                            Select a subject and exam type, then click
+                            <strong>Load Students</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/faculty-marks.js"></script>
+
+</body>
+
+</html>

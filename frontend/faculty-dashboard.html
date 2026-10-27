@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Faculty Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="faculty-dashboard.html" class="active">
+                    🏠 Dashboard
+                </a>
+
+                <a href="faculty-students.html">
+                    👨‍🎓 Students
+                </a>
+
+                <a href="faculty-attendance.html">
+    📅 Attendance
+</a>
+
+                <a href="faculty-marks.html">
+                    📝 Marks
+                </a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Faculty Dashboard
+                    </h1>
+
+                    <p>
+                        Welcome back, <span id="facultyName">
+                            Faculty
+                        </span>
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    👨‍🏫 Faculty
+                </div>
+
+            </header>
+
+
+            <!-- Faculty Profile -->
+
+            <section class="dashboard-card faculty-profile-card">
+
+                <div>
+
+                    <h2 id="profileName">
+                        Loading...
+                    </h2>
+
+                    <p id="profileEmail">
+                        Loading...
+                    </p>
+
+                    <p>
+                        Employee ID:
+                        <strong id="employeeId">
+                            -
+                        </strong>
+                    </p>
+
+                    <p>
+                        Department:
+                        <strong id="departmentName">
+                            -
+                        </strong>
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Statistics -->
+            <!-- Statistics -->
+
+            <section class="stats-grid faculty-stats">
+
+                <div class="stat-card">
+                    <h3>👨‍🎓 Total Students</h3>
+                    <p id="totalStudents">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>📊 Attendance Records</h3>
+                    <p id="attendanceRecords">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>📝 Marks Records</h3>
+                    <p id="marksRecords">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>📚 Total Subjects</h3>
+                    <p id="totalSubjects">0</p>
+                </div>
+
+            </section>
+
+
+
+
+            <!-- Subjects -->
+
+            <section class="dashboard-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        📚 Department Subjects
+                    </h2>
+
+                </div>
+
+                <div id="subjectsContainer" class="subjects-grid">
+                    Loading subjects...
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/faculty-dashboard.js"></script>
+
+</body>
+
+</html>

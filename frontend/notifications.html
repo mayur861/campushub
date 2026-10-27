@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Notifications</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="skills.html">
+                    🛠️ Skills & Resume
+                </a>
+
+                <a href="subjects.html">
+                    📚 Subjects
+                </a>
+
+                <a href="attendance.html">
+                    📊 Attendance
+                </a>
+
+                <a href="marks.html">
+                    📝 Marks
+                </a>
+
+                <a href="jobs.html">
+                    💼 Jobs
+                </a>
+
+                <a href="applications.html">
+                    📄 Applications
+                </a>
+
+                <a href="notifications.html" class="active">
+                    🔔 Notifications
+                </a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Notifications
+                    </h1>
+
+                    <p>
+                        Stay updated with your CampusHub activities
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Notification Stats -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>
+                        Total Notifications
+                    </h3>
+
+                    <p id="totalNotifications">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Unread
+                    </h3>
+
+                    <p id="unreadNotifications">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3>
+                        Read
+                    </h3>
+
+                    <p id="readNotifications">
+                        0
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notifications -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    🔔 My Notifications
+                </h2>
+
+                <div id="notificationsContainer" class="notifications-container">
+                    Loading notifications...
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/notifications.js"></script>
+
+</body>
+
+</html>

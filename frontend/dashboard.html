@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="#" class="active">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="subjects.html">
+                        📚 Subjects
+                    </a>
+                </a>
+
+                <a href="attendance.html">
+                        📊 Attendance
+                    </a>
+
+                <a href="marks.html">
+    📝 Marks
+</a>
+
+                <a href="jobs.html">
+    💼 Jobs
+</a>
+
+                <a href="applications.html">
+    📄 Applications
+</a>
+                <a href="notifications.html">
+    🔔 Notifications
+</a>
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="topbar">
+
+                <div>
+                    <h1>Student Dashboard</h1>
+
+                    <p>
+                        Welcome back, <span id="studentName">Student</span> 👋
+                    </p>
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Loading -->
+            <div id="loading">
+                Loading dashboard...
+            </div>
+
+
+            <!-- Dashboard Content -->
+            <div id="dashboardContent" style="display:none;">
+
+                <!-- Stats -->
+                <section class="stats-grid">
+
+                    <div class="stat-card">
+                        <h3>CGPA</h3>
+                        <p id="cgpa">-</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Attendance</h3>
+                        <p id="attendance">-</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Average Marks</h3>
+                        <p id="averageMarks">-</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Applications</h3>
+                        <p id="applications">-</p>
+                    </div>
+
+                </section>
+
+
+                <!-- Profile -->
+                <section class="dashboard-card">
+
+                    <h2>Student Profile</h2>
+
+                    <div class="profile-grid">
+
+                        <div>
+                            <strong>Name</strong>
+                            <p id="profileName">-</p>
+                        </div>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p id="profileEmail">-</p>
+                        </div>
+
+                        <div>
+                            <strong>Enrollment No</strong>
+                            <p id="enrollmentNo">-</p>
+                        </div>
+
+                        <div>
+                            <strong>Department</strong>
+                            <p id="department">-</p>
+                        </div>
+
+                        <div>
+                            <strong>Semester</strong>
+                            <p id="semester">-</p>
+                        </div>
+
+                        <div>
+                            <strong>Phone</strong>
+                            <p id="phone">-</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Skills -->
+                <section class="dashboard-card">
+
+                    <h2>My Skills</h2>
+
+                    <div id="skills" class="skills-container"></div>
+
+                </section>
+
+
+                <!-- Applications -->
+                <section class="dashboard-card">
+
+                    <h2>Recent Job Applications</h2>
+
+                    <div id="applicationList"></div>
+
+                </section>
+
+
+                <!-- Notifications -->
+                <section class="dashboard-card">
+
+                    <h2>Notifications</h2>
+
+                    <div id="notificationList"></div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
+
+</html>

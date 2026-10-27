@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                CampusHub
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="profile.html">
+                    👤 Profile
+                </a>
+
+                <a href="skills.html">
+                    🛠️ Skills & Resume
+                </a>
+
+                <a href="subjects.html">
+                    📚 Subjects
+                </a>
+
+                <a href="attendance.html" class="active">
+                    📊 Attendance
+                </a>
+
+                <a href="marks.html">
+    📝 Marks
+</a>
+
+                <a href="jobs.html">
+    💼 Jobs
+</a>
+
+                <a href="applications.html">
+    📄 Applications
+</a>
+
+                <a href="notifications.html">
+    🔔 Notifications
+</a>
+
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Attendance
+                    </h1>
+
+                    <p>
+                        Track your subject-wise attendance
+                    </p>
+
+                </div>
+
+                <div class="profile-badge">
+                    Student
+                </div>
+
+            </header>
+
+
+            <!-- Overall Attendance -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📊 Overall Attendance
+                </h2>
+
+                <div class="attendance-overview">
+
+                    <div class="attendance-circle">
+
+                        <span id="overallAttendance">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="attendance-details">
+
+                        <p>
+                            <strong>
+                                Total Classes:
+                            </strong>
+
+                            <span id="totalClasses">
+                                0
+                            </span>
+                        </p>
+
+                        <p>
+                            <strong>
+                                Present:
+                            </strong>
+
+                            <span id="presentClasses">
+                                0
+                            </span>
+                        </p>
+
+                        <p>
+                            <strong>
+                                Absent:
+                            </strong>
+
+                            <span id="absentClasses">
+                                0
+                            </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Subject Summary -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📚 Subject-wise Attendance
+                </h2>
+
+                <div id="summaryContainer" class="attendance-table-container">
+                    Loading attendance...
+                </div>
+
+            </section>
+
+
+            <!-- Attendance History -->
+
+            <section class="dashboard-card">
+
+                <h2>
+                    📅 Attendance History
+                </h2>
+
+                <div id="historyContainer" class="attendance-table-container">
+                    Loading history...
+                </div>
+
+            </section>
+
+
+            <p id="message" class="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/attendance.js"></script>
+
+</body>
+
+</html>

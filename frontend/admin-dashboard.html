@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-container">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <h2>CampusHub</h2>
+
+                <p>Admin Panel</p>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="admin-dashboard.html" class="active">
+
+                    📊 Dashboard
+
+                </a>
+
+
+                <a href="#" id="logoutBtn">
+
+                    🚪 Logout
+
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <div class="admin-page">
+
+
+                <!-- Header -->
+
+                <div class="page-header">
+
+                    <h1>
+                        Admin Dashboard
+                    </h1>
+
+                    <p>
+                        Manage and monitor CampusHub
+                    </p>
+
+                </div>
+
+
+
+                <!-- Statistics -->
+
+                <div class="admin-stats-grid">
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Total Users
+                            </span>
+
+                            <h2 id="totalUsers">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            👨‍🎓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Students
+                            </span>
+
+                            <h2 id="totalStudents">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            👨‍🏫
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Faculty
+                            </span>
+
+                            <h2 id="totalFaculty">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            🏢
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Companies
+                            </span>
+
+                            <h2 id="totalCompanies">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            💼
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Jobs
+                            </span>
+
+                            <h2 id="totalJobs">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            📄
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Applications
+                            </span>
+
+                            <h2 id="totalApplications">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Message -->
+
+                <p id="message" class="message">
+                </p>
+
+
+
+                <!-- Recent Users -->
+
+                <div class="admin-users-section">
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <h2>
+                                Recent Users
+                            </h2>
+
+                            <p>
+                                Latest registered users
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="table-container">
+
+                        <table class="student-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>#</th>
+
+                                    <th>
+                                        Name
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Role
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="usersTableBody">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

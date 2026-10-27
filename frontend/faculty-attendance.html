@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Faculty Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <h2>CampusHub</h2>
+
+                <p>Faculty Panel</p>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="faculty-dashboard.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="faculty-students.html">
+                    👨‍🎓 Students
+                </a>
+
+                <a href="faculty-attendance.html" class="active">
+                    📅 Attendance
+                </a>
+
+                <a href="faculty-marks.html">
+                    📝 Marks
+                </a>
+
+                <a href="#" id="logoutBtn">
+                    🚪 Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+            <div class="attendance-page">
+
+                <!-- PAGE HEADER -->
+
+                <div class="page-header">
+
+                    <h1>
+                        Attendance Management
+                    </h1>
+
+                    <p>
+                        Mark and manage student attendance
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     FILTER / CONTROLS
+                ========================== -->
+
+                <div class="attendance-controls">
+
+                    <div class="controls-grid">
+
+
+                        <!-- SUBJECT -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Select Subject
+                            </label>
+
+                            <select id="subject">
+
+                                <option value="">
+                                    Select Subject
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DATE -->
+
+                        <div class="form-group">
+
+                            <label for="attendanceDate">
+                                Attendance Date
+                            </label>
+
+                            <input type="date" id="attendanceDate">
+
+                        </div>
+
+
+                        <!-- LOAD -->
+
+                        <button type="button" id="loadStudentsBtn" class="btn btn-primary">
+
+                            Load Students
+
+                        </button>
+
+
+                    </div>
+
+
+                    <p id="message" class="message">
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     ATTENDANCE TABLE
+                ========================== -->
+
+                <div id="attendanceSection" class="attendance-section" style="display: none;">
+
+                    <div class="attendance-section-header">
+
+
+                        <div>
+
+                            <h2>
+                                Student Attendance
+                            </h2>
+
+                            <p id="studentCount">
+                                0 students
+                            </p>
+
+                        </div>
+
+
+                        <div class="bulk-buttons">
+
+                            <button type="button" id="markAllPresentBtn" class="btn btn-success">
+
+                                ✓ Mark All Present
+
+                            </button>
+
+
+                            <button type="button" id="markAllAbsentBtn" class="btn btn-secondary">
+
+                                ✕ Mark All Absent
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- TABLE -->
+
+                    <div class="table-container">
+
+                        <table class="student-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        #
+                                    </th>
+
+                                    <th>
+                                        Student
+                                    </th>
+
+                                    <th>
+                                        Enrollment
+                                    </th>
+
+                                    <th>
+                                        Semester
+                                    </th>
+
+                                    <th>
+                                        CGPA
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="studentTableBody">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- SAVE -->
+
+                    <div class="save-attendance">
+
+                        <button type="button" id="saveAttendanceBtn" class="btn btn-primary">
+
+                            💾 Save Attendance
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     EMPTY STATE
+                ========================== -->
+
+                <div id="emptyState" class="attendance-section">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            Select Subject & Date
+                        </h3>
+
+                        <p>
+                            Select a subject and attendance date, then click
+                            <strong>Load Students</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/faculty-attendance.js"></script>
+
+</body>
+
+</html>

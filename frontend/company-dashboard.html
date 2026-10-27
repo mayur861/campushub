@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub - Company Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-container">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <h2>CampusHub</h2>
+
+                <p>Company Portal</p>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="company-dashboard.html" class="active">
+                📊 Dashboard
+            </a>
+
+                <a href="company-dashboard.html#jobs">
+                💼 Jobs
+            </a>
+
+                <a href="company-dashboard.html#applications">
+                📄 Applications
+            </a>
+
+                <a href="#" id="logoutBtn">
+                🚪 Logout
+            </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <div class="company-page">
+
+
+                <!-- Header -->
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>
+                            Company Dashboard
+                        </h1>
+
+                        <p>
+                            Manage jobs and student applications
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Company Info -->
+
+                <div class="company-profile-card">
+
+                    <div class="company-profile-icon">
+                        🏢
+                    </div>
+
+                    <div>
+
+                        <h2 id="companyName">
+                            Loading...
+                        </h2>
+
+                        <p id="companyIndustry">
+                            -
+                        </p>
+
+                        <p id="companyWebsite">
+                            -
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Statistics -->
+
+                <div class="company-stats-grid">
+
+
+                    <div class="company-stat-card">
+
+                        <div class="company-stat-icon">
+                            💼
+                        </div>
+
+                        <div>
+
+                            <span>
+                            Total Jobs
+                        </span>
+
+                            <h2 id="totalJobs">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="company-stat-card">
+
+                        <div class="company-stat-icon">
+                            📄
+                        </div>
+
+                        <div>
+
+                            <span>
+                            Applications
+                        </span>
+
+                            <h2 id="totalApplications">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="company-stat-card">
+
+                        <div class="company-stat-icon">
+                            ⭐
+                        </div>
+
+                        <div>
+
+                            <span>
+                            Shortlisted
+                        </span>
+
+                            <h2 id="shortlistedStudents">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="company-stat-card">
+
+                        <div class="company-stat-icon">
+                            ✅
+                        </div>
+
+                        <div>
+
+                            <span>
+                            Selected
+                        </span>
+
+                            <h2 id="selectedStudents">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <p id="message" class="message"></p>
+
+
+
+                <!-- Jobs -->
+
+                <section class="company-section" id="jobs">
+
+                    <div class="company-section-header">
+
+                        <div>
+
+                            <h2>
+                                Recent Jobs
+                            </h2>
+
+                            <p>
+                                Jobs posted by your company
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table class="student-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Job</th>
+
+                                    <th>Type</th>
+
+                                    <th>Location</th>
+
+                                    <th>Min CGPA</th>
+
+                                    <th>Salary</th>
+
+                                    <th>Deadline</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="jobsTableBody"></tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Applications -->
+
+                <section class="company-section" id="applications">
+
+                    <div class="company-section-header">
+
+                        <div>
+
+                            <h2>
+                                Student Applications
+                            </h2>
+
+                            <p>
+                                Review and update application status
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table class="student-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Student</th>
+
+                                    <th>Enrollment</th>
+
+                                    <th>Job</th>
+
+                                    <th>CGPA</th>
+
+                                    <th>Status</th>
+
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="applicationsTableBody"></tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <script src="js/company-dashboard.js"></script>
+
+</body>
+
+</html>
